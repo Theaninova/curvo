@@ -33,11 +33,11 @@ where
 {
     /// control points with homogeneous coordinates
     /// the last element of the vector is the `weight`
-    control_points: Vec<Vec<OPoint<T, D>>>,
-    u_degree: usize,
-    v_degree: usize,
-    u_knots: KnotVector<T>,
-    v_knots: KnotVector<T>,
+    pub control_points: Vec<Vec<OPoint<T, D>>>,
+    pub u_degree: usize,
+    pub v_degree: usize,
+    pub u_knots: KnotVector<T>,
+    pub v_knots: KnotVector<T>,
 }
 
 /// 2D NURBS surface alias
